@@ -62,7 +62,8 @@ This is true even for files which have since been modified in the working direct
 
 git ls-files will give you all tracked files in the current repository
 
- 
+  
+
 
 * anytime this is used in the name of a file the command line 
 will auto fill it with what it thinks is the correct ending of thefile name ex ro* could be roryFile.txt
