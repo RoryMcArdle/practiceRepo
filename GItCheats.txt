@@ -35,7 +35,15 @@ pwd -lists name of current directory
 
 mkdir "directory" - makes a directory with a given name
 
-rmdir "" - removes given directory
+rmdir "" - removes given directory if empty
+
+rm "" - deletes a file
+
+rm -rf  "" - deletes a given directory and all attached files
+
+git mv test.txt test1.txt ( renames a file )
+
+
  
 * anytime this is used in the name of a file the command line 
 will auto fill it with what it thinks is the correct ending of thefile name ex ro* could be roryFile.txt
