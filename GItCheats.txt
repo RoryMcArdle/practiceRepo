@@ -19,7 +19,7 @@ $ git status ( returns status of repo )
 
 git add "" or git stage "" ( adds the file that follows to the staging area where it can be committed )
  
-git restore "" ( removes the file from the staging area )
+git restore "" ( removes the file from the staging area and removes all changes )
 
 git checkout -- "" ( will remove any changes done in working directory and file will be whatever version was last committed. )
 
@@ -43,7 +43,14 @@ rm "" - deletes a file
 
 rm -rf  "" - deletes a given directory and all attached files
 
-git mv test.txt test1.txt ( renames a file )
+git mv test.txt test1.txt ( renames a file and stages the updated file)
+
+#you can also rename the file outside of git 
+
+#if you do this git will say the old file has been deleted and a new file ahs been added with the same contents and a different name
+#This can be "fixed using the following add command to stage your changes
+
+git add -A ( this recursively adds all changes made to the staging area and fixes any issues with the renaming or moving of files ) 
 
 git commit -am "commit message"  ( can be used to skip the staging part of the process when it isnt required, can only be done with tracked files)
 
