@@ -19,4 +19,40 @@ $ git status ( returns status of repo )
 
 git add "" or git stage "" ( adds the file that follows to the staging area where it can be committed )
  
+git restore "" ( removes the file from the staging area )
 
+git commit -m "this is the commit comment" ( You can commit any staged changes using this )
+
+git push origin main ( pushes to the first input(online) from the second input(local) )
+
+git pull origin main ( pulls from the first input(online) to the second input(local) )
+
+clear - clears your screen but doesnt affect anything
+
+ls - lists contents of current directory
+
+pwd -lists name of current directory
+
+mkdir "directory" - makes a directory with a given name
+
+rmdir "" - removes given directory
+ 
+* anytime this is used in the name of a file the command line 
+will auto fill it with what it thinks is the correct ending of thefile name ex ro* could be roryFile.txt
+can get complicated if lots of files have similar names
+
+
+---- FLAGS ----
+
+-a	Gives all files including hidden . files
+-l	gives extra information on each output
+-1	lists each output 1 to a line
+-i	ignores case (grep)
+
+
+---- MAKING A FILE ----
+ you can make a file using :
+
+echo "this is a file" >> aFile.txt ( will make that file and fill it with the quoted text )
+
+notepad fileName.txt ( will either open the named file or can create one if the file doesnt exist )
