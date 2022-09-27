@@ -1,0 +1,22 @@
+to clone directory - create directory in Github/ gitlabs, create a README.txt* and copy url
+
+* very important or your repositories will not link correctly
+
+#check that your configs are correct in whatever file you want to place your git directory in.
+$ git config --global user.name "Rory"
+$ git config --global user.email "r.mcardle@qub.ac.uk"
+$ git config --global --list  ( this will show your name and email if done correctly )
+
+in BASH : 
+$ git clone http... ( will show your directory being created and linked to your online repo
+$ ls  ( to check that repo was made ) 
+$ cd ( insert repo name )
+$ git status ( returns status of repo ) 
+( it should return what branch you are on, that the directory is up to date with online repo and that 
+  the working directory is clean with nothing to commit. )
+
+---- GIT COMMANDS ----
+
+git add "" or git stage "" ( adds the file that follows to the staging area where it can be committed )
+ 
+
