@@ -21,6 +21,8 @@ git add "" or git stage "" ( adds the file that follows to the staging area wher
  
 git restore "" ( removes the file from the staging area )
 
+git checkout -- "" ( will remove any changes done in working directory and file will be whatever version was last committed. )
+
 git commit -m "this is the commit comment" ( You can commit any staged changes using this )
 
 git push origin main ( pushes to the first input(online) from the second input(local) )
@@ -43,8 +45,18 @@ rm -rf  "" - deletes a given directory and all attached files
 
 git mv test.txt test1.txt ( renames a file )
 
+git commit -am "commit message"  ( can be used to skip the staging part of the process when it isnt required, can only be done with tracked files)
+
+
+TRACKED FILES
+Only files which have just been added to the working directory for the first time will not be tracked. 
+any file that has been staged and or committed to the repository will be tracked. 
+This is true even for files which have since been modified in the working directory with the modified version also being tracked.
+
+git ls-files will give you all tracked files in the current repository
 
  
+
 * anytime this is used in the name of a file the command line 
 will auto fill it with what it thinks is the correct ending of thefile name ex ro* could be roryFile.txt
 can get complicated if lots of files have similar names
